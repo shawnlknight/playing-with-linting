@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "flow-bin": "^0.56.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0"
   },
@@ -18,14 +19,16 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "format": "prettier-standard 'src/**/*.js'",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "flow": "flow",
+    "flow start": "flow start",
+    "flow stop": "flow stop",
+    "flow status": "flow status",
+    "flow coverage": "flow coverage"
   },
   "lint-staged": {
     "linters": {
-      "src/**/*.js": [
-        "prettier-standard",
-        "git add"
-      ]
+      "src/**/*.js": ["prettier-standard", "git add"]
     }
   }
 }
