@@ -7,6 +7,8 @@
     "react-dom": "^16.0.0"
   },
   "devDependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^4.2.3",
     "prettier-standard": "^7.0.1",
     "react-scripts": "1.0.14"
   },
@@ -16,5 +18,11 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "format": "prettier-standard 'src/**/*.js'"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier-standard",
+      "git add"
+    ]
   }
 }
