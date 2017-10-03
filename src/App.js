@@ -1,8 +1,8 @@
 // @flow
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import add from './addFunction/index';
+import React from 'react'
+import logo from './logo.svg'
+import './App.css'
+import add from './addFunction/index'
 
 const App = () => {
   return (
@@ -18,7 +18,7 @@ const App = () => {
         </p>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App
